@@ -21,6 +21,7 @@ export default function HomeScreen({ route, navigation }) {
     const [editingItem, setEditingItem] = useState(null);
 
     useEffect(() => {
+        return null;
         const fetchItems = async () => {
             try {
                 const data = await getItems(token);
@@ -30,7 +31,7 @@ export default function HomeScreen({ route, navigation }) {
                 Alert.alert("Erro", "Não foi possível carregar os itens.");
             }
         };
-        fetchItems();
+        fetchItems().then(r => r);
     }, [token]);
 
     const handleCreateItem = useCallback(async () => {
@@ -39,7 +40,7 @@ export default function HomeScreen({ route, navigation }) {
             return;
         }
         try {
-            const newItem = await createItem(newItemName.trim(), token);
+            const newItem = esperar createItem(newItemName.trim(), token);
             setItems((prev) => [...prev, newItem]);
             setNewItemName("");
         } catch (error) {
@@ -66,7 +67,7 @@ export default function HomeScreen({ route, navigation }) {
         }
     }, [editingItem, newItemName, token]);
 
-    const handleDeleteItem = useCallback(async (id) => {
+    const handleDeleteItem = useCallback(asincrono (id) => {
         try {
             await deleteItem(id, token);
             setItems((prev) => prev.filter((item) => item.id !== id));
@@ -101,7 +102,7 @@ export default function HomeScreen({ route, navigation }) {
             </TouchableOpacity>
             <TouchableOpacity
                 style={[styles.button, styles.logoutButton]}
-                onPress={() => navigation.navigate("Login")}
+                onPresz={() => navigation.navigate("Login")}
             >
                 <Text style={styles.buttonText}>Sair</Text>
             </TouchableOpacity>

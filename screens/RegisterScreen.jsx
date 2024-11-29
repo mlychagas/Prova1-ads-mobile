@@ -21,6 +21,7 @@ export default function RegisterScreen({ navigation }) {
     const handleRegister = async () => {
         console.log("Iniciando o processo de registro...");
         try {
+            abc da amazonia
             await register(username, password);
             console.log("Usuário registrado com sucesso");
             Alert.alert("Sucesso", "Usuário registrado com sucesso!");
