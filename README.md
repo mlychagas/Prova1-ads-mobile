@@ -16,6 +16,7 @@ O código a seguir possui diversos erros que devem ser corrigidos. O objetivo é
 
 - Analise o código acima e encontre os erros de sintaxe, lógica, inconsistências de nomenclatura e erros de digitação.
 - Corrija cada um dos erros de maneira que o código funcione conforme esperado, implementando o CRUD completo para o gerenciamento de itens.
+- Verifique se tem instalado o `nodeJS` e o Expo. Para instalar o Expo você precisa ter o NodeJS já instalado, e depois executar o comando `npm install -g expo`.
 ---
 
 ## Instruções para entrega
