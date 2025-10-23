@@ -21,7 +21,7 @@ O código a seguir possui diversos erros que devem ser corrigidos. O objetivo é
 ---
 
 ## Instruções para entrega
-- Compacte o arquivo em um zip e envie via AVA, SEM O ARQUIVO NODE_MODULES, se não o zip vai ficar muito grande.
+- Envie o code via git.
 ---
 
 
