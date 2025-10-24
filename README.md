@@ -36,19 +36,23 @@ O aplicativo deve possuir as seguintes telas e funcionalidades:
 - Campos para email e senha
 - Botão de login
 - Link para tela de registro
-- **Referência visual**: `prints/login.png`
+- **Referência visual**: ![Tela de Login](./prints/login.png)
 
 ### 2. Tela de Registro (`RegisterScreen`)
 - Campos para nome, email e senha
 - Botão de registro
 - Link para voltar ao login
-- **Referência visual**: `prints/registrar.png`
+- **Referência visual**: ![Tela de Registro](./prints/registrar.png)
 
 ### 3. Tela Principal (`HomeScreen`)
 - Lista de itens cadastrados
 - Botão para adicionar novo item
 - Funcionalidades de editar e excluir itens
-- **Referência visual**: `prints/img_1.png`, `prints/img_2.png`, `prints/img_3.png`, `prints/img_4.png`
+- **Referência visual**: 
+  - ![Tela Principal 1](./prints/img_1.png)
+  - ![Tela Principal 2](./prints/img_2.png)
+  - ![Tela Principal 3](./prints/img_3.png)
+  - ![Tela Principal 4](./prints/img_4.png)
 
 ---
 
@@ -107,7 +111,7 @@ Certifique-se de ter instalado:
 5. **Verifique** se todas as funcionalidades estão operacionais
 
 ### Dicas Importantes:
-- Use as imagens na pasta `prints/` como referência visual
+- Use as imagens de referência acima para ver como as telas devem ficar
 - Teste cada funcionalidade após fazer as correções
 - Verifique se a navegação entre telas está funcionando
 - Confirme se o CRUD de itens está completo
