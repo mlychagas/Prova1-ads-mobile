@@ -294,8 +294,7 @@ node app.js
 - ❌ **NÃO incluir**: pasta `API/`, `node_modules/`, arquivos temporários
 
 ### Formato de Entrega
-- **Plataforma**: Git (GitHub/GitLab)
-- **Branch**: `main` ou `develop`
+- **Plataforma**: Git (GitHub)
 - **Commit**: Mensagens descritivas das correções
 
 ### 🎯 Critérios de Qualidade
