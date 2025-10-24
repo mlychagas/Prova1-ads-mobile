@@ -82,13 +82,35 @@ Analise o código e procure por:
 
 ---
 
+## 🚀 API Backend (Necessária para o funcionamento)
+
+**IMPORTANTE**: Antes de executar o aplicativo mobile, você precisa iniciar a API backend.
+
+### Configurando a API
+
+1. **Extraia o arquivo** `API/gerenciamento-itens-api.zip`
+2. **Entre na pasta** da API extraída
+3. **Instale as dependências**:
+   ```bash
+   npm install
+   ```
+4. **Execute a API**:
+   ```bash
+   node app.js
+   ```
+
+⚠️ **Nota**: A API não é o foco da prova - você só precisa executá-la para que o aplicativo mobile possa consumir os dados. O foco da prova é corrigir os erros no código do aplicativo mobile.
+
+---
+
 ## 📝 Como Realizar a Prova
 
-1. **Analise** todos os arquivos do projeto
-2. **Identifique** os erros presentes no código
-3. **Corrija** cada erro encontrado
-4. **Teste** se o aplicativo funciona corretamente
-5. **Verifique** se todas as funcionalidades estão operacionais
+1. **Configure a API** (siga as instruções acima)
+2. **Analise** todos os arquivos do projeto mobile
+3. **Identifique** os erros presentes no código
+4. **Corrija** cada erro encontrado
+5. **Teste** se o aplicativo funciona corretamente
+6. **Verifique** se todas as funcionalidades estão operacionais
 
 ### Dicas Importantes:
 - Use as imagens de referência acima para ver como as telas devem ficar
