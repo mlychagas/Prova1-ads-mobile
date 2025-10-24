@@ -16,10 +16,14 @@
 A TechCorp Solutions está desenvolvendo um aplicativo mobile para gerenciamento de itens com sistema de autenticação. O projeto atual possui um código base com diversos erros que precisam ser identificados e corrigidos para que o sistema funcione corretamente.
 
 ### Objetivo
-Implementar um aplicativo mobile funcional que permita:
+**IMPORTANTE**: Este é um projeto de **CORREÇÃO**, não de implementação do zero. Todas as telas, componentes e funcionalidades já existem no código, mas possuem erros que impedem seu funcionamento.
+
+**CORRIGIR** um aplicativo mobile funcional que permita:
 - Autenticação de usuários (login/registro)
 - Gerenciamento completo de itens (CRUD)
 - Interface intuitiva e responsiva
+
+⚠️ **Não é necessário implementar nada do zero - apenas corrigir os erros existentes!**
 
 ---
 
@@ -76,7 +80,7 @@ Database (Simulada)
 **Complexidade**: MÉDIA  
 
 **Descrição Detalhada**:
-Corrigir e implementar a tela de login do aplicativo mobile. A tela deve consumir a API de autenticação e gerenciar o estado de login do usuário.
+**CORRIGIR** a tela de login do aplicativo mobile. A tela já existe mas possui erros que impedem seu funcionamento. Deve consumir a API de autenticação e gerenciar o estado de login do usuário.
 
 **Funcionalidades Esperadas**:
 - Interface de login conforme referência visual
@@ -87,7 +91,8 @@ Corrigir e implementar a tela de login do aplicativo mobile. A tela deve consumi
 - Navegação para tela principal após login
 - Tratamento de erros de autenticação
 
-**Referência Visual**: ![Tela de Login](./prints/login.png)
+**Referência Visual**: 
+![Tela de Login](./prints/login.png)
 
 ---
 
@@ -97,7 +102,7 @@ Corrigir e implementar a tela de login do aplicativo mobile. A tela deve consumi
 **Complexidade**: MÉDIA  
 
 **Descrição Detalhada**:
-Corrigir e implementar a tela de registro do aplicativo mobile. A tela deve consumir a API de registro e validar os dados do usuário.
+**CORRIGIR** a tela de registro do aplicativo mobile. A tela já existe mas possui erros que impedem seu funcionamento. Deve consumir a API de registro e validar os dados do usuário.
 
 **Funcionalidades Esperadas**:
 - Interface de registro conforme referência visual
@@ -108,7 +113,8 @@ Corrigir e implementar a tela de registro do aplicativo mobile. A tela deve cons
 - Navegação para tela principal após registro
 - Tratamento de erros de registro
 
-**Referência Visual**: ![Tela de Registro](./prints/registrar.png)
+**Referência Visual**: 
+![Tela de Registro](./prints/registrar.png)
 
 ---
 
@@ -118,7 +124,7 @@ Corrigir e implementar a tela de registro do aplicativo mobile. A tela deve cons
 **Complexidade**: ALTA  
 
 **Descrição Detalhada**:
-Corrigir e implementar a tela principal do aplicativo mobile. A tela deve exibir a lista de itens e permitir operações CRUD consumindo a API.
+**CORRIGIR** a tela principal do aplicativo mobile. A tela já existe mas possui erros que impedem seu funcionamento. Deve exibir a lista de itens e permitir operações CRUD consumindo a API.
 
 **Funcionalidades Esperadas**:
 - Interface principal conforme referências visuais
@@ -130,11 +136,11 @@ Corrigir e implementar a tela principal do aplicativo mobile. A tela deve exibir
 - Tratamento de erros da API
 - Estados de carregamento
 
-**Referência Visual**: 
-- ![Tela Principal 1](./prints/img_1.png)
-- ![Tela Principal 2](./prints/img_2.png)
-- ![Tela Principal 3](./prints/img_3.png)
-- ![Tela Principal 4](./prints/img_4.png)
+**Referências Visuais**: 
+![Tela Principal - Lista de Itens](./prints/img_1.png)
+![Tela Principal - Adicionar Item](./prints/img_2.png)
+![Tela Principal - Editar Item](./prints/img_3.png)
+![Tela Principal - Interface Completa](./prints/img_4.png)
 
 ---
 
@@ -144,7 +150,7 @@ Corrigir e implementar a tela principal do aplicativo mobile. A tela deve exibir
 **Complexidade**: MÉDIA  
 
 **Descrição Detalhada**:
-Corrigir e implementar os componentes de lista de itens (ItemList e ListItem) para exibir os dados de forma organizada.
+**CORRIGIR** os componentes de lista de itens (ItemList e ListItem). Os componentes já existem mas possuem erros que impedem sua funcionalidade. Devem exibir os dados de forma organizada.
 
 **Funcionalidades Esperadas**:
 - Componente ItemList funcional
@@ -162,7 +168,7 @@ Corrigir e implementar os componentes de lista de itens (ItemList e ListItem) pa
 **Complexidade**: BAIXA  
 
 **Descrição Detalhada**:
-Corrigir e implementar o sistema de navegação entre todas as telas do aplicativo mobile.
+**CORRIGIR** o sistema de navegação entre todas as telas do aplicativo mobile. A navegação já está configurada mas possui erros que impedem seu funcionamento.
 
 **Funcionalidades Esperadas**:
 - Navegação fluida entre Login, Registro e Home
@@ -180,7 +186,7 @@ Corrigir e implementar o sistema de navegação entre todas as telas do aplicati
 **Complexidade**: MÉDIA  
 
 **Descrição Detalhada**:
-Corrigir e implementar o consumo da API backend para todas as operações do aplicativo mobile.
+**CORRIGIR** o consumo da API backend para todas as operações do aplicativo mobile. O serviço de API já existe mas possui erros que impedem a comunicação com o backend.
 
 **Funcionalidades Esperadas**:
 - Configuração correta do cliente HTTP
@@ -216,12 +222,6 @@ Corrigir e implementar o consumo da API backend para todas as operações do apl
 - [ ] Edição de itens existentes
 - [ ] Exclusão de itens
 - [ ] Interface responsiva e intuitiva
-
-**Referência Visual**: 
-- ![Lista de Itens](./prints/img_1.png)
-- ![Adicionar Item](./prints/img_2.png)
-- ![Editar Item](./prints/img_3.png)
-- ![Interface Principal](./prints/img_4.png)
 
 ### RF003 - Navegação entre Telas
 **Descrição**: Implementar navegação fluida entre todas as telas do aplicativo
