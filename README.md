@@ -70,106 +70,126 @@ Database (Simulada)
 
 ## 📊 Fichas Técnicas Detalhadas
 
-### FICHA TÉCNICA #001 - Sistema de Autenticação
-**ID**: AUTH-001  
+### FICHA TÉCNICA #001 - Tela de Login
+**ID**: LOGIN-001  
 **Prioridade**: ALTA  
 **Complexidade**: MÉDIA  
 
 **Descrição Detalhada**:
-Implementar sistema completo de autenticação com duas telas principais: Login e Registro. O sistema deve validar credenciais, gerenciar sessões e permitir navegação fluida entre as telas.
+Corrigir e implementar a tela de login do aplicativo mobile. A tela deve consumir a API de autenticação e gerenciar o estado de login do usuário.
 
 **Funcionalidades Esperadas**:
-- Tela de login com campos de email e senha
-- Tela de registro com campos de nome, email e senha
+- Interface de login conforme referência visual
+- Campos de email e senha funcionais
 - Validação de dados de entrada
-- Persistência de sessão do usuário
-- Navegação entre telas de autenticação
+- Consumo da API de login
+- Navegação para tela de registro
+- Navegação para tela principal após login
+- Tratamento de erros de autenticação
+
+**Referência Visual**: ![Tela de Login](./prints/login.png)
 
 ---
 
-### FICHA TÉCNICA #002 - Gerenciamento de Itens (CRUD)
-**ID**: CRUD-001  
+### FICHA TÉCNICA #002 - Tela de Registro
+**ID**: REGISTER-001  
+**Prioridade**: ALTA  
+**Complexidade**: MÉDIA  
+
+**Descrição Detalhada**:
+Corrigir e implementar a tela de registro do aplicativo mobile. A tela deve consumir a API de registro e validar os dados do usuário.
+
+**Funcionalidades Esperadas**:
+- Interface de registro conforme referência visual
+- Campos de nome, email e senha funcionais
+- Validação de dados de entrada
+- Consumo da API de registro
+- Navegação para tela de login
+- Navegação para tela principal após registro
+- Tratamento de erros de registro
+
+**Referência Visual**: ![Tela de Registro](./prints/registrar.png)
+
+---
+
+### FICHA TÉCNICA #003 - Tela Principal (Home)
+**ID**: HOME-001  
 **Prioridade**: ALTA  
 **Complexidade**: ALTA  
 
 **Descrição Detalhada**:
-Implementar operações completas de gerenciamento de itens com interface intuitiva. O sistema deve permitir criar, listar, editar e excluir itens com validações apropriadas.
+Corrigir e implementar a tela principal do aplicativo mobile. A tela deve exibir a lista de itens e permitir operações CRUD consumindo a API.
 
 **Funcionalidades Esperadas**:
-- Listagem de todos os itens cadastrados
-- Adição de novos itens ao sistema
-- Edição de itens existentes
-- Exclusão de itens com confirmação
+- Interface principal conforme referências visuais
+- Listagem de itens consumindo a API
+- Botão para adicionar novos itens
+- Funcionalidade de editar itens existentes
+- Funcionalidade de excluir itens
 - Validação de dados antes de salvar
-- Interface responsiva para todas as operações
+- Tratamento de erros da API
+- Estados de carregamento
+
+**Referência Visual**: 
+- ![Tela Principal 1](./prints/img_1.png)
+- ![Tela Principal 2](./prints/img_2.png)
+- ![Tela Principal 3](./prints/img_3.png)
+- ![Tela Principal 4](./prints/img_4.png)
 
 ---
 
-### FICHA TÉCNICA #003 - Navegação e Interface
-**ID**: NAV-001  
+### FICHA TÉCNICA #004 - Componentes de Lista
+**ID**: COMPONENTS-001  
 **Prioridade**: MÉDIA  
+**Complexidade**: MÉDIA  
+
+**Descrição Detalhada**:
+Corrigir e implementar os componentes de lista de itens (ItemList e ListItem) para exibir os dados de forma organizada.
+
+**Funcionalidades Esperadas**:
+- Componente ItemList funcional
+- Componente ListItem para exibir cada item
+- Exibição correta dos dados dos itens
+- Botões de ação (editar/excluir) funcionais
+- Layout responsivo e organizado
+- Integração com a tela principal
+
+---
+
+### FICHA TÉCNICA #005 - Navegação entre Telas
+**ID**: NAV-001  
+**Prioridade**: ALTA  
 **Complexidade**: BAIXA  
 
 **Descrição Detalhada**:
-Implementar sistema de navegação fluida entre todas as telas do aplicativo com transições suaves e gerenciamento de estado de navegação.
+Corrigir e implementar o sistema de navegação entre todas as telas do aplicativo mobile.
 
 **Funcionalidades Esperadas**:
-- Navegação fluida entre todas as telas
-- Transições suaves entre telas
+- Navegação fluida entre Login, Registro e Home
+- Configuração correta do Stack Navigator
 - Botões de navegação funcionais
-- Gerenciamento correto do histórico de navegação
+- Transições suaves entre telas
+- Gerenciamento de estado de navegação
 - Headers apropriados para cada tela
 
 ---
 
-### FICHA TÉCNICA #004 - Validação e Tratamento de Erros
-**ID**: VAL-001  
-**Prioridade**: ALTA  
-**Complexidade**: MÉDIA  
-
-**Descrição Detalhada**:
-Implementar sistema robusto de validação de dados e tratamento de erros para garantir estabilidade e boa experiência do usuário.
-
-**Funcionalidades Esperadas**:
-- Validação de dados de entrada em tempo real
-- Tratamento adequado de erros de rede
-- Tratamento de erros de validação
-- Feedback visual para o usuário sobre erros
-- Mensagens de erro claras e informativas
-
----
-
-### FICHA TÉCNICA #005 - Integração com API
+### FICHA TÉCNICA #006 - Consumo da API
 **ID**: API-001  
 **Prioridade**: ALTA  
 **Complexidade**: MÉDIA  
 
 **Descrição Detalhada**:
-Implementar integração completa com a API backend para todas as operações de autenticação e gerenciamento de itens.
+Corrigir e implementar o consumo da API backend para todas as operações do aplicativo mobile.
 
 **Funcionalidades Esperadas**:
-- Integração com API backend para autenticação
-- Integração com API backend para operações de itens
-- Tratamento adequado de respostas da API
+- Configuração correta do cliente HTTP
+- Consumo da API de autenticação (login/registro)
+- Consumo da API de itens (CRUD)
+- Tratamento de respostas da API
+- Tratamento de erros de rede
 - Gerenciamento de estados de carregamento
-- Tratamento de erros de conectividade
-
----
-
-### FICHA TÉCNICA #006 - Interface e UX
-**ID**: UI-001  
-**Prioridade**: MÉDIA  
-**Complexidade**: BAIXA  
-
-**Descrição Detalhada**:
-Implementar interface de usuário responsiva e intuitiva seguindo as especificações visuais fornecidas.
-
-**Funcionalidades Esperadas**:
-- Interface responsiva e intuitiva
-- Componentes reutilizáveis e bem estruturados
-- Paleta de cores consistente
-- Feedback visual adequado para ações do usuário
-- Layout adaptável a diferentes tamanhos de tela
+- Interceptores para requisições
 
 ---
 
@@ -271,43 +291,46 @@ node app.js
 ### FASE 1: Análise e Identificação
 **Objetivo**: Mapear todos os problemas existentes no código
 
-#### AUTH-001 - Sistema de Autenticação
-- [ ] Analisar telas de login e registro
-- [ ] Verificar funcionamento da autenticação
-- [ ] Identificar problemas de validação
-- [ ] Verificar persistência de sessão
-- [ ] Testar navegação entre telas
+#### LOGIN-001 - Tela de Login
+- [ ] Analisar tela de login
+- [ ] Verificar campos de email e senha
+- [ ] Testar validação de dados
+- [ ] Verificar consumo da API de login
+- [ ] Testar navegação para outras telas
 
-#### CRUD-001 - Gerenciamento de Itens
-- [ ] Analisar tela principal e componentes
-- [ ] Verificar operações de listagem
-- [ ] Verificar operações de adição
-- [ ] Verificar operações de edição
-- [ ] Verificar operações de exclusão
+#### REGISTER-001 - Tela de Registro
+- [ ] Analisar tela de registro
+- [ ] Verificar campos de nome, email e senha
+- [ ] Testar validação de dados
+- [ ] Verificar consumo da API de registro
+- [ ] Testar navegação para outras telas
+
+#### HOME-001 - Tela Principal
+- [ ] Analisar tela principal
+- [ ] Verificar listagem de itens
+- [ ] Testar operações de adicionar item
+- [ ] Testar operações de editar item
+- [ ] Testar operações de excluir item
+
+#### COMPONENTS-001 - Componentes de Lista
+- [ ] Analisar componente ItemList
+- [ ] Analisar componente ListItem
+- [ ] Verificar exibição dos dados
+- [ ] Testar botões de ação
+- [ ] Verificar integração com tela principal
 
 #### NAV-001 - Navegação
 - [ ] Testar navegação entre todas as telas
+- [ ] Verificar configuração do Stack Navigator
 - [ ] Verificar botões de navegação
-- [ ] Verificar transições entre telas
-- [ ] Identificar problemas de roteamento
+- [ ] Testar transições entre telas
 
-#### VAL-001 - Validação e Erros
-- [ ] Testar validações de formulário
-- [ ] Verificar tratamento de erros
-- [ ] Testar feedback para o usuário
-- [ ] Verificar mensagens de erro
-
-#### API-001 - Integração
-- [ ] Testar conectividade com API
-- [ ] Verificar operações de autenticação
-- [ ] Verificar operações de itens
+#### API-001 - Consumo da API
+- [ ] Verificar configuração do cliente HTTP
+- [ ] Testar consumo da API de autenticação
+- [ ] Testar consumo da API de itens
+- [ ] Verificar tratamento de respostas
 - [ ] Testar tratamento de erros de rede
-
-#### UI-001 - Interface
-- [ ] Verificar layout das telas
-- [ ] Testar responsividade
-- [ ] Verificar consistência visual
-- [ ] Comparar com referências fornecidas
 
 ---
 
