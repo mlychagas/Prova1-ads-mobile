@@ -122,7 +122,8 @@ Analise o código e procure por:
 
 ## 📤 Entrega
 
-- Envie o código corrigido via **Git**
+- Envie APENAS o código corrigido via **Git**
+- Sem API e node_modules (será descontado nota caso tenha)
 - Certifique-se de que todos os erros foram corrigidos
 - O projeto deve estar funcional e executável
 
