@@ -80,26 +80,6 @@ Analise o código e procure por:
 
 ---
 
-## 🛠️ Instruções Técnicas
-
-### Pré-requisitos
-Certifique-se de ter instalado:
-- **Node.js** (versão 16 ou superior)
-- **Expo CLI**: `npm install -g expo`
-
-### Executando o Projeto
-1. Instale as dependências:
-   ```bash
-   npm install
-   ```
-
-2. Inicie o projeto:
-   ```bash
-   npm start
-   ```
-
-3. Escaneie o QR code com o app Expo Go no seu celular
-
 ---
 
 ## 📝 Como Realizar a Prova
