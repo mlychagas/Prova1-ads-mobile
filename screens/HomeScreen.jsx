@@ -5,12 +5,11 @@ import ItemList from "../components/ItemList";
 import { getItems, createItem, updateItem, deleteItem } from "../services/api";
 
 /**
- * Componente principal que exibe a lista de itens e permite operações de CRUD.
+ * Tela principal responsável por exibir e gerenciar a lista de itens (CRUD).
  *
- * @component
- * @param {Object} props - Propriedades do componente.
- * @param {Object} props.route - Objeto de rota contendo parâmetros.
- * @param {Object} props.navigation - Objeto de navegação para transição entre telas.
+ * @param {object} props
+ * @param {object} props.route - Objeto de rota contendo parâmetros, como token.
+ * @param {object} props.navigation - Objeto de navegação.
  * @returns {JSX.Element}
  */
 export default function HomeScreen({ route, navigation }) {
@@ -21,7 +20,6 @@ export default function HomeScreen({ route, navigation }) {
     const [editingItem, setEditingItem] = useState(null);
 
     useEffect(() => {
-        return null;
         const fetchItems = async () => {
             try {
                 const data = await getItems(token);
@@ -31,7 +29,7 @@ export default function HomeScreen({ route, navigation }) {
                 Alert.alert("Erro", "Não foi possível carregar os itens.");
             }
         };
-        fetchItems().then(r => r);
+        fetchItems();
     }, [token]);
 
     const handleCreateItem = useCallback(async () => {
@@ -40,7 +38,7 @@ export default function HomeScreen({ route, navigation }) {
             return;
         }
         try {
-            const newItem = esperar createItem(newItemName.trim(), token);
+            const newItem = await createItem(newItemName.trim(), token);
             setItems((prev) => [...prev, newItem]);
             setNewItemName("");
         } catch (error) {
@@ -67,7 +65,7 @@ export default function HomeScreen({ route, navigation }) {
         }
     }, [editingItem, newItemName, token]);
 
-    const handleDeleteItem = useCallback(asincrono (id) => {
+    const handleDeleteItem = useCallback(async (id) => {
         try {
             await deleteItem(id, token);
             setItems((prev) => prev.filter((item) => item.id !== id));
@@ -85,13 +83,16 @@ export default function HomeScreen({ route, navigation }) {
     return (
         <View style={styles.container}>
             <Text style={styles.title}>Lista de Itens</Text>
+
             <ItemList items={items} onEdit={handleEditItem} onDelete={handleDeleteItem} />
+
             <TextInput
                 style={styles.input}
                 placeholder="Nome do item"
                 value={newItemName}
                 onChangeText={setNewItemName}
             />
+
             <TouchableOpacity
                 style={styles.button}
                 onPress={editingItem ? handleUpdateItem : handleCreateItem}
@@ -100,9 +101,10 @@ export default function HomeScreen({ route, navigation }) {
                     {editingItem ? "Atualizar Item" : "Criar Item"}
                 </Text>
             </TouchableOpacity>
+
             <TouchableOpacity
                 style={[styles.button, styles.logoutButton]}
-                onPresz={() => navigation.navigate("Login")}
+                onPress={() => navigation.navigate("Login")}
             >
                 <Text style={styles.buttonText}>Sair</Text>
             </TouchableOpacity>

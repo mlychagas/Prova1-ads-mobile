@@ -1,2 +1,18 @@
 node_modules/
 .idea/
+API/
+
+# OSX
+#
+.DS_Store
+
+# Xcode
+#
+build/
+*.pbxuser
+
+# node_modules/
+#
+node_modules/
+npm-debug.log
+yarn-error.log

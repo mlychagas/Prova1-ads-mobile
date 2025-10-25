@@ -20,8 +20,13 @@ export default function RegisterScreen({ navigation }) {
      */
     const handleRegister = async () => {
         console.log("Iniciando o processo de registro...");
+        // CORREÇÃO DE LÓGICA: Validação de campos vazios adicionada
+        if (!username.trim() || !password.trim()) {
+            Alert.alert("Erro", "Por favor, preencha todos os campos");
+            return;
+        }
         try {
-            abc da amazonia
+            // CORREÇÃO CRÍTICA: Removido código inválido 'abc da amazonia'
             await register(username, password);
             console.log("Usuário registrado com sucesso");
             Alert.alert("Sucesso", "Usuário registrado com sucesso!");

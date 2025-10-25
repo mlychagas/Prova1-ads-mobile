@@ -20,8 +20,14 @@ export default function LoginScreen({ navigation }) {
      */
     const handleLogin = async () => {
         console.log("Iniciando o processo de login...");
+        // CORREÇÃO DE LÓGICA: Validação de campos vazios adicionada
+        if (!username.trim() || !password.trim()) {
+            Alert.alert("Erro", "Por favor, preencha todos os campos");
+            return;
+        }
         try {
-            const data = await login(usuario, senha);
+            // CORREÇÃO CRÍTICA: Substituído 'usuario' e 'senha' por 'username' e 'password'
+            const data = await login(username, password);
             console.log("Login bem-sucedido:", data);
             Alert.alert("Login bem-sucedido!");
             navigation.navigate("Home", { token: data.token });
@@ -36,7 +42,7 @@ export default function LoginScreen({ navigation }) {
             <Text style={styles.title}>Login</Text>
             <TextInput
                 style={styles.input}
-                placeholder="Nome de usuário"
+                placeholder="E-mail" // CORREÇÃO: Alterado de "Nome de usuário" para "E-mail" (consistente com keyboardType)
                 value={username}
                 onChangeText={setUsername}
                 autoCapitalize="none"
